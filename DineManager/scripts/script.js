@@ -1,6 +1,3 @@
-// JavaScript for the reservation system
-
-// Function to validate reservation form inputs
 function validateReservationForm() {
     const numberOfGuests = document.getElementById("numberOfGuests");
     const specialRequests = document.getElementById("specialRequests");
@@ -20,7 +17,6 @@ function validateReservationForm() {
     return true;
 }
 
-// Function to handle search form submission
 function handleSearchFormSubmit(event) {
     const searchTerm = document.getElementById("searchTerm").value.trim();
     if (searchTerm === "") {
@@ -29,19 +25,16 @@ function handleSearchFormSubmit(event) {
     }
 }
 
-// Function to clear the search input when the user clicks the clear button
 function clearSearchInput() {
     document.getElementById("searchTerm").value = "";
 }
 
-// Event listener for search form submission
 document.addEventListener("DOMContentLoaded", function() {
     const searchForm = document.getElementById("searchForm");
     if (searchForm) {
         searchForm.addEventListener("submit", handleSearchFormSubmit);
     }
 
-    // Handle clear search button click
     const clearButton = document.getElementById("clearSearchButton");
     if (clearButton) {
         clearButton.addEventListener("click", clearSearchInput);
