@@ -30,8 +30,11 @@ Configure database connection:
 Update the database connection settings in includes/db_connection.php:
 
 $host = 'localhost'; // Database host
+
 $username = 'root'; // Database username
+
 $password = ''; // Database password (use 'root' or another password for non-local databases)
+
 $dbname = 'restaurant_reservations'; // Your database name
 
 Upload the files to your web server:
