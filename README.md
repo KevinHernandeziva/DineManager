@@ -12,10 +12,10 @@ Installation
 To install and set up DineManager, follow these steps:
 Prerequisites
 
-    A local or remote web server 
-    PHP 7.4 or later
-    MySQL or MariaDB database server
-    XAMPP/WAMP or other PHP stack (optional for local setup)
+A local or remote web server 
+PHP 7.4 or later
+MySQL or MariaDB database server
+XAMPP/WAMP or other PHP stack (optional for local setup)
 
 Steps
 
