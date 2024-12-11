@@ -19,9 +19,6 @@ XAMPP/WAMP or other PHP stack (optional for local setup)
 
 Steps
 
-Clone the repository:
-git clone https://github.com/dinemanager.git
-
 Set up the database:
 Create a new database in MySQL:
 CREATE DATABASE restaurant_reservations;
