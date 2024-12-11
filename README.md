@@ -9,7 +9,9 @@ Features
 5. Dining Preferences: Enable customers to input their dining preferences and make it easier for the restaurant to accommodate their needs.
 
 Database Schema
+
 reservations Table
+
 reservation_id INT PRIMARY KEY (AUTO_INCREMENT)
 customer_id INT (Foreign Key referencing customers(customer_id))
 reservation_date DATE
@@ -17,21 +19,28 @@ reservation_time TIME
 num_guests INT
 special_requests TEXT
 
+
 customers Table
+
 customer_id INT PRIMARY KEY (AUTO_INCREMENT)
 customer_name VARCHAR(100)
 contact_info VARCHAR(100)
 
+
 dining_preferences Table
+
 preference_id INT PRIMARY KEY (AUTO_INCREMENT)
 customer_id INT (Foreign Key referencing customers(customer_id))
 favorite_table VARCHAR(45)
 dietary_restrictions VARCHAR(200)
 
+
 customer_preferences Table
+
 preference_id INT PRIMARY KEY (AUTO_INCREMENT)
 customer_id INT (Foreign Key referencing customers(customer_id))
 special_requests TEXT
+
 
 Usage
 Add a Reservation
@@ -45,15 +54,18 @@ A list of all reservations will be displayed, including customer names, reservat
 Each reservation can be edited or deleted.
 
 Search Reservations
+
 Navigate to the Search Reservations page.
 You can search for reservations by Reservation ID, Customer ID, or Customer Name.
 Results will display the matching reservations, and you can view the full details or delete them.
 
 Dining Preferences
+
 After viewing a reservation, you will be prompted to add Dining Preferences.
 Customers can update their dining preferences, including special requests, favorite table, and dietary restrictions.
 
 Technologies Used
+
 PHP for server-side logic
 MySQL for database management
 HTML/CSS for frontend design
