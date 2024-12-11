@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    background: linear-gradient(to right, #f7f7f7, #e0e0e0); 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    flex-grow: 1; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #444;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.actions .btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.actions .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007BFF;
+    color: white;
+    text-transform: uppercase;
+}
+
+table td {
+    background-color: #fff;
+}
+
+form {
+    background-color: #fff;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+form input[type="submit"], form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover, form button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+form input, form select, form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+header .welcome-text {
+    color: #ffebeb; 
+}
+
+header .site-name {
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: auto;  
+}
+
+footer p {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    gap: 25px;  
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul li {
+        text-align: center; 
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    form input, form select, form textarea {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    table th, table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .actions .btn {
+        padding: 10px 18px;
+        font-size: 1rem;
+    }
+}
+.intro-text {
+    text-align: center; 
+    margin: 0 auto;  
+    font-size: 1.2rem;  
+    color: #555;  
+    width: 80%;  
+    margin-top: 20px;  
+}
+.confirmation {
+    background-color: #e6ffe6; /* Light green background */
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #4CAF50;
+}
+
+.confirmation h3 {
+    color: #4CAF50;
+}
+
+.confirmation p {
+    font-size: 1.1rem;
+}
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: inline-block; /* Ensure it's displayed inline */
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
